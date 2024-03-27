@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=1000 height=600 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -57,11 +57,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/mixiyo_WebGL@1.3.loader.js";
+      var loaderUrl = buildUrl + "/mixiyou.loader.js";
       var config = {
-        dataUrl: buildUrl + "/mixiyo_WebGL@1.3.data",
-        frameworkUrl: buildUrl + "/mixiyo_WebGL@1.3.framework.js",
-        codeUrl: buildUrl + "/mixiyo_WebGL@1.3.wasm",
+        dataUrl: buildUrl + "/mixiyou.data",
+        frameworkUrl: buildUrl + "/mixiyou.framework.js",
+        codeUrl: buildUrl + "/mixiyou.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "proj",
@@ -94,7 +94,7 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "960px";
+        canvas.style.width = "1000px";
         canvas.style.height = "600px";
       }
 
